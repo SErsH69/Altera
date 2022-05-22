@@ -1,4 +1,37 @@
 $(function() {
+    $('.sl_first').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        fade: false,
+        swipe: false,
+        asNavFor: '.sl_navs',
+        responsive: [
+          {
+            breakpoint: 871,
+            settings: {
+                swipe: true
+            }
+          },
+        ]
+    });
+    $('.sl_navs').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.sl_first',
+        arrows: false,
+        dots: false,    
+        focusOnSelect: true,
+        responsive: [
+          {
+            breakpoint: 871,
+            settings: {
+                variableWidth: true
+            }
+          },
+        ]
+    });
     $('.sl_services').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
