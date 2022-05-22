@@ -77,6 +77,8 @@ textarea {
   letter-spacing: 0.06em;
   color: #000000;
   margin-bottom: 24px; }
+  .main_first__title br {
+    display: none; }
   @media all and (max-width: 1023px) {
     .main_first__title {
       margin-bottom: 30px;
@@ -268,6 +270,19 @@ textarea {
       height: 100%;
       background: rgba(0, 0, 0, 0.6);
       opacity: 0;
+      transition: all .3s ease-out; }
+    .main_services__block:after {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, rgba(0, 0, 23, 0) 28.5%, rgba(0, 0, 23, 0.85) 100%);
+      opacity: 1;
       transition: all .3s ease-out; }
     .main_services__block:hover:before {
       opacity: 1; }
@@ -518,6 +533,19 @@ textarea {
       background: rgba(0, 0, 0, 0.6);
       opacity: 0;
       transition: all .3s ease-out; }
+    .main__cat__block:after {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, rgba(0, 0, 23, 0) 28.5%, rgba(0, 0, 23, 0.85) 100%);
+      opacity: 1;
+      transition: all .3s ease-out; }
     .main__cat__block:hover:before {
       opacity: 1; }
     @media all and (max-width: 980px) {
@@ -710,10 +738,12 @@ textarea {
         top: -57px; } }
 
 .main_reviews {
-  margin-top: 100px; }
+  margin-top: 100px;
+  margin-bottom: 100px; }
   @media all and (max-width: 1023px) {
     .main_reviews {
-      margin-top: 80px; } }
+      margin-top: 80px;
+      margin-bottom: 80px; } }
   .main_reviews__title {
     font-family: 'Poiret One', cursive;
     font-style: normal;
