@@ -1076,3 +1076,156 @@ textarea {
     margin-top: 40px; }
   .work-process--mobile {
     margin-bottom: 0; } }
+
+.r_block__title {
+  font-family: 'Poiret One', cursive;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 30px; }
+  @media all and (max-width: 1023px) {
+    .r_block__title {
+      font-size: 18px;
+      margin-bottom: 20px; } }
+
+.r_block__in {
+  background: #0095D9 url("../img/bg_logo.png") calc(100% - 90px) 50% no-repeat;
+  padding: 40px 60px; }
+  @media all and (max-width: 1023px) {
+    .r_block__in {
+      padding: 30px 20px;
+      background: #0095D9; } }
+
+.r_block__list {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  .r_block__list li {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF; }
+    .r_block__list li:not(:last-child) {
+      margin-bottom: 10px; }
+    @media all and (max-width: 1023px) {
+      .r_block__list li {
+        font-size: 14px; } }
+
+.main__bls {
+  margin-top: 100px; }
+  @media all and (max-width: 1023px) {
+    .main__bls {
+      margin-top: 80px; } }
+  .main__bls__title {
+    font-family: 'Poiret One', cursive;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    color: #0095D9;
+    margin-bottom: 30px; }
+    @media all and (max-width: 1023px) {
+      .main__bls__title {
+        font-size: 18px;
+        margin-bottom: 20px; } }
+  .main__bls__block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px; }
+    @media all and (max-width: 1023px) {
+      .main__bls__block {
+        flex-direction: column;
+        margin-bottom: 30px; } }
+  .main__bls__l-side {
+    width: calc(50% - 15px);
+    font-size: 0; }
+    @media all and (max-width: 1023px) {
+      .main__bls__l-side {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px; } }
+  .main__bls__r-side {
+    width: calc(50% - 15px);
+    display: flex;
+    flex-direction: column; }
+    @media all and (max-width: 1023px) {
+      .main__bls__r-side {
+        width: 100%; } }
+  .main__bls__tit {
+    margin-bottom: 25px;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    color: #000000; }
+    @media all and (max-width: 1023px) {
+      .main__bls__tit {
+        font-size: 20px;
+        margin-bottom: 20px; } }
+  .main__bls__text {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 25px; }
+    @media all and (max-width: 1023px) {
+      .main__bls__text {
+        font-size: 16px;
+        margin-bottom: 20px; } }
+  .main__bls__list {
+    margin: 0;
+    padding-left: 25px;
+    margin-bottom: auto; }
+    .main__bls__list li {
+      font-family: 'Ubuntu', sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 140%;
+      color: #000000;
+      margin-bottom: 12px; }
+  .main__bls__info {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: #EEF2F3;
+    justify-content: space-between; }
+    @media all and (max-width: 1023px) {
+      .main__bls__info {
+        margin-top: 14px;
+        flex-direction: column; } }
+  .main__bls__price {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: #000000; }
+    @media all and (max-width: 1023px) {
+      .main__bls__price {
+        font-size: 20px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column; } }
+    .main__bls__price span {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px; }
+  .main__bls__btn {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    text-align: center;
+    color: #FFFFFF;
+    background: #FF8006;
+    border-radius: 500px;
+    padding: 15px 50px;
+    cursor: pointer; }
+    .main__bls__btn:hover {
+      background: #0095D9; }
