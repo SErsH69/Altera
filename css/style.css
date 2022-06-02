@@ -1069,7 +1069,9 @@ textarea {
     display: block;
     cursor: pointer; }
     .main_advice__button:hover {
-      background: #0095D9; }
+      background: #C46000; }
+    .main_advice__button:active {
+      background: #934800; }
 
 @media all and (max-width: 1023px) {
   .portfolio__header {
@@ -1228,4 +1230,6 @@ textarea {
     padding: 15px 50px;
     cursor: pointer; }
     .main__bls__btn:hover {
-      background: #0095D9; }
+      background: #C46000; }
+    .main__bls__btn:active {
+      background: #934800; }

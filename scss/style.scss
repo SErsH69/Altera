@@ -1215,7 +1215,10 @@ textarea {
 		display: block;
 		cursor: pointer;
 		&:hover {
-			background: #0095D9;
+			background: #C46000;
+		}
+		&:active {
+			background: #934800;
 		}
 	}
 }
@@ -1399,7 +1402,10 @@ textarea {
 		padding: 15px 50px;
 		cursor: pointer;
 		&:hover { 
-			background: #0095D9;
+			background: #C46000;
+		}
+		&:active {
+			background: #934800;
 		}
 	}
 }
