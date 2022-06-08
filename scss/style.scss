@@ -22,6 +22,10 @@ img {
 textarea {
 	resize: none; 
 }
+.header {
+	z-index: 3;
+	padding-bottom: 30px;
+}
 // main_first
 .main_first {
 	@media all and (max-width: 1023px) {
@@ -150,7 +154,27 @@ textarea {
 			height: 130px;
 		}
 	}
-	&__nav {
+	&__navs {
+		width: 100%;
+		@media all and (max-width: 870px) {
+			overflow: auto;
+			padding-bottom: 10px;
+		}
+	}
+	.slick-dots {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		display: flex;
+		align-items: flex-start;
+		width: 100%;
+		@media all and (max-width: 870px) {
+			width: max-content;
+		}
+	}
+	li {
+		width: 25%;
+		position: relative;
 		font-family: 'Poiret One', cursive;
 		font-style: normal;
 		font-weight: 600;
@@ -165,7 +189,6 @@ textarea {
 		cursor: pointer;
 		@media all and (max-width: 870px) {
 			width: 210px;	
-			pointer-events: none;
 		}
 		&:before {
 			content: '';
@@ -174,7 +197,7 @@ textarea {
 			transition: all .3s ease-out;
 			background: #CCCCCC;
 			left: -1px;
-			top: -5px;
+			top: 0px;
 			position: absolute;
 		}
 		&:after {
@@ -184,10 +207,10 @@ textarea {
 			height: 11px;
 			background: #CCCCCC;
 			right: -1px;
-			top: -5px;
+			top: 0px;
 			position: absolute;
 		}
-		&.slick-current.slick-active {
+		&.slick-active {
 			color: #000;
 			border-color: #0095D9;
 			&:after, &:before {
@@ -207,10 +230,7 @@ textarea {
 		}
 		&:last-child {
 			&:after { 
-				right: 2px;
-				@media all and (max-width: 1190px) {
-					right: 0;
-				}
+				right: 0px;
 			}
 		}
 	}
@@ -277,7 +297,9 @@ textarea {
 	}
 	&__blocks {
 		position: relative;
-		padding-bottom: 52px;
+		@media all and (max-width: 1023px) {
+			padding-bottom: 52px;
+		}
 	}
 	&__block {
 		position: relative;
@@ -847,7 +869,6 @@ textarea {
 // main_prods end
 // main_reviews
 .main_reviews {
-	margin-top: 100px;
 	margin-bottom: 100px;
 	@media all and (max-width: 1023px) {
 		margin-top: 80px;
@@ -1409,4 +1430,23 @@ textarea {
 		}
 	}
 }
+.inline-svg-icon {
+	display: none;
+}
 // main__bls end
+.new_block {
+	background: #EEF2F3;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	margin-bottom: 100px;
+	margin-top: 100px;
+	@media all and (max-width: 1023px) {
+		padding-top: 80px;
+		padding-bottom: 80px;
+		margin-bottom: 80px;
+		margin-top: 80px;
+	}
+	.portfolio__header {
+		margin-top: 0;
+	}
+}
