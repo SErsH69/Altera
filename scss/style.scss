@@ -1486,6 +1486,9 @@ textarea {
 		}
 	}
 	.main_first__navs {
+		@media all and (max-width: 1023px) {
+			bottom: 0 !important;
+		}
 		.slick-dots {
 			width: 100%;
 			display: flex;
@@ -1518,6 +1521,31 @@ textarea {
 			&.slick-active {
 				background: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='5' cy='5' r='5' fill='%230095D9'/%3E%3Ccircle cx='5' cy='5' r='4' fill='white'/%3E%3Ccircle cx='5' cy='5' r='2' fill='%230095D9'/%3E%3C/svg%3E%0A") 50% / 100% no-repeat;
 			}
+		}
+	}
+	.main_first__more {
+		display: none;
+	}
+	.main_first__text {
+		font-size: 24px;
+		text-transform: uppercase;
+		@media all and (max-width: 1023px) {
+			font-size: 14px !important;
+		}
+	}
+	.main_first__title {
+		font-weight: 900 !important;
+		padding-bottom: 20px;
+		position: relative;
+		&:before {
+			content: '';
+			width: 56px;
+			height: 6px;
+			background: #FF8006;
+			bottom: 0;
+			left: 50%;
+			margin-left: -28px;
+			position: absolute;
 		}
 	}
 }
